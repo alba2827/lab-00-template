@@ -20,12 +20,12 @@ team_data <- tibble(
   name = c("Sophia", "Tarana", "May", 
            "Arshpreet", "Ada"),
   github_username = c("sophiacauter", "taranaedwards", "mayuco168", 
-                      "username 3", "username 4"), 
+                      "arshpreet singh-04", "adaceylan04"), 
   colour = c("steelblue1", "purple4", "navy", 
              "blue", "red"),
   hobby = c("MathSoc netball", "journaling", "napping", 
-            "reading", ""),
-  favourite_number = c(3, 4, 3, 7, 3 )
+            "reading", "crochet"),
+  favourite_number = c(3, 4, 3, 7, 2 )
   )
 
 team_data
@@ -47,19 +47,19 @@ p1
 ```
 
 
-*Remove this text (including the stars), and add your answer for Exercise 18 here.*
+*This graph shows on the x axis, a GitHub username, and on the y axis, the height of each bar is the corresponding person's favourite number, with the colour of each bar being the person's favourite colour*
 
 ### Exercises 19
 
 Change the text of the plot title and axis labels.
 
 ```{r labelled-bar-plot}
-p1 + labs(x = "Insert text here", 
-          y = "Insert text here",
-          title = "Insert text here")
+p1 + labs(x = "GitHub Username", 
+          y = "Favourite Number",
+          title = "The Favourite Number and Colour of Each Member of the Group")
 ```
 
-*Remove this text (including the stars), and add your answer for Exercise 19 here.*
+*The function labs() changes the axis and plot labels on a visualisation. After looking up using "??labs" the function labs() also modifies the legend of a visualisation*
 
 ### Exercise 20
 
@@ -69,4 +69,4 @@ p2 <- ggplot(team_data, aes(x = hobby)) +
 p2
 ```
 
-*Remove this text (including the stars) and add your answer for Exercise 20 here.*
+*To display the data of everyone's hobby in the group/ in the whole course, it may be better to display each hobby as a segment of a pie chart. Or to display each hobby as a word, then increase the font size by 5 for each person >= 2 who also does that hobby, this would display both the number of different hobbies, while also demonstrating which hobbies are the most popular.*
