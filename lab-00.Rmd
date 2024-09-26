@@ -13,7 +13,7 @@ library(tidyverse)
 
 ### Exercises 16-17
 
-We set up the data frame. Edit the data below to include information about your team members.
+We set up the data frame. Edit the data below to include information about your team members .
 
 ```{r setup-tibble}
 team_data <- tibble(
